@@ -2,17 +2,39 @@ import shutil, os, fnmatch
 
 print """
 
-  __,                    _ __  _       
- (                    / ( /  )//       
-  `.   ,_   __,  _   /<  /--'// , , _, 
-(___)_/|_)_(_/(_/ (_/ |_/   (/_(_/_(_)_
-      /|                            /| 
-     (/                            (/  
+	  __,                    _ __  _       
+	 (                    / ( /  )//       
+	  `.   ,_   __,  _   /<  /--'// , , _, 
+	(___)_/|_)_(_/(_/ (_/ |_/   (/_(_/_(_)_
+	      /|                            /| 
+	     (/                            (/  
 
-https://github.com/jakemor/SparkPlug
+	https://github.com/jakemor/SparkPlug
 
-Welcome! Please answer the questions below. 
-If you fuck up, delete this folder and git clone again.
+	NOTE: If you fuck up, answering the questions,
+	delete this folder and git clone again.
+
+	----------------------------- 
+	B E F O R E   S T A R T I N G  
+	----------------------------- 
+
+1. 	Create a new project in Google Cloud Platform], 
+	then set up App Engine within that project. Take 
+	note of the `Project id`. 
+
+2. 	Create a Cloud SQL Instance within the project as
+	well. Take note of the `Instance id` and the 
+	`Root password` that you choose during setup. When
+	setup is completed, take note of the `Instance
+	connection name` of your new instance. 
+
+3. 	When you see that setup is complete, click on the
+	instance id, and go to Databases. Create a new
+	database and name it the name of your project.
+
+4. 	Next go to Authorization and add your home network
+	so you can connect to the database from home. 
+
 """
 
 def findReplace(directory, find, replace, filePattern, testing=False):
@@ -63,6 +85,12 @@ shutil.rmtree('.git')
 # delete setup.py
 os.remove('setup.py')
 
+print """
+Complete. 
 
+Now, rename the .gitignore file and initialize a new
+git repo inside your project =)
+
+"""
 
 
