@@ -50,8 +50,10 @@ for q in questions:
 
 	keyValue = raw_input(question + " ")
 
-	findReplace(PROJECT_DIRECTORY, keyName, keyValue, "*.py", True)
-	findReplace(PROJECT_DIRECTORY, keyName, keyValue, "*.yaml", True)
+	findReplace(PROJECT_DIRECTORY, keyName, keyValue, "*.py")
+	findReplace(PROJECT_DIRECTORY, keyName, keyValue, "*.yaml")
+
+findReplace(PROJECT_DIRECTORY, 'SPARKPLUG_GITIGNORE', '.gitignore', '*')
 
 # rename parent folder
 
