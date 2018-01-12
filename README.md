@@ -1,4 +1,4 @@
-# Spark Plug
+# SparkPlug
 
 A framework for writing RESTful APIs with WebApp2 on Google App Engine in Python with out of the box support for user management, and an included helper script to get everything set up. 
 
