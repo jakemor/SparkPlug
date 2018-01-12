@@ -1,10 +1,6 @@
 # Spark Plug
 
-A framework for writing RESTful APIs with WebApp2 on Google App Engine in Python with an included helper script to get everything set up. 
-
-## ORM
-
-[Peewee](http://fill.in). Documentation [here](http://fill.in).
+A framework for writing RESTful APIs with WebApp2 on Google App Engine in Python with out of the box support for user management, and an included helper script to get everything set up. 
 
 ## Project Structure
 ```
@@ -25,6 +21,14 @@ A framework for writing RESTful APIs with WebApp2 on Google App Engine in Python
   main.py
 ```
 
+## Documentation
+
+Coming soon! For now, try to figure it out! 
+
+## ORM
+
+[Peewee](http://fill.in). Documentation [here](http://fill.in).
+
 # Getting Started
 
 Assuming you've built many apps on app engine and google cloud platform, this should be pretty self explanitory! If you need help, shoot me an email. 
@@ -42,7 +46,7 @@ Assuming you've built many apps on app engine and google cloud platform, this sh
 2. Download and install a program like [MAMP](http://fill.in) to run a MySQL server locally.
 3. Install an SQL browser, like [Sequel Pro](http://fill.in) (included in MAMP).
 4. Create a new database locally, and name it the name of your Project
-5. Make sure the user and password are both root. 
+5. Make sure the user and password are both root (important!). 
 
 ## Setting up SparkPlug locally 
 
