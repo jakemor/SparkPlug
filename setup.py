@@ -108,11 +108,11 @@ for a in answers:
 # os.remove('setup.py')
 
 print """
+
      Setup Complete.                      
 
 
      Remaining steps: 
-     
  
   1  Rename .gitignore file 
  
