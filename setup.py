@@ -110,9 +110,16 @@ for a in answers:
 print """
      Setup Complete.                      
 
-     Rename the .gitignore file, initialize a new
-     git repo and you're good to go!
 
+     Remaining steps: 
+     
+ 
+  1  Rename .gitignore file 
+ 
+  2  Initialize a new git repository
+ 
+  3  Add the child folder to App Engine Launcher
+ 
      ⚡
 
 """
