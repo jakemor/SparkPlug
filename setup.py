@@ -22,7 +22,8 @@ print """
  
   1  Create a new project in Google Cloud Platform], 
      then set up App Engine within that project. Take 
-     note of 'name' you chose as well as the 'project id'. 
+     note of the name you chose as well as the 'project
+     id'. 
  
   2  Create a Cloud SQL Instance within the project as
      well. Take note of the 'instance id' and the 
@@ -42,58 +43,58 @@ print """
 """
 
 def findReplace(directory, find, replace, filePattern, testing=False):
-	for path, dirs, files in os.walk(os.path.abspath(directory)):	
-		for filename in fnmatch.filter(files, filePattern):
-			filepath = os.path.join(path, filename)
-			
-			if (not testing):
-				with open(filepath) as f:
-					s = f.read()
-				s = s.replace(find, replace)
-				with open(filepath, "w") as f:
-					f.write(s)
-		for i in range(len(dirs)):
-			newname = dirs[i].replace(find, replace)
-			os.rename(os.path.join(path, dirs[i]), os.path.join(path, newname))
-			dirs[i] = newname
+  for path, dirs, files in os.walk(os.path.abspath(directory)): 
+    for filename in fnmatch.filter(files, filePattern):
+      filepath = os.path.join(path, filename)
+      
+      if (not testing):
+        with open(filepath) as f:
+          s = f.read()
+        s = s.replace(find, replace)
+        with open(filepath, "w") as f:
+          f.write(s)
+    for i in range(len(dirs)):
+      newname = dirs[i].replace(find, replace)
+      os.rename(os.path.join(path, dirs[i]), os.path.join(path, newname))
+      dirs[i] = newname
 
 PROJECT_DIRECTORY = ''
 
 questions = [
-	("PROJECT_NAME", "What is your project name?"),
-	("PROJECT_ID", "What is your project id?"),
-	("SQL_PROD_USER","What is the user's username on your production sql isntance?"),
-	("SQL_PROD_PASS","What is the user's password on your production sql isntance?"),
-	("SQL_IP_ADDRESS","What is the sql instance's IP address?"),
-	("SQL_INSTANCE_ID","What is the 'Instance id' of your sql instance?"),
-	("SQL_INSTANCE_CONNECTION_NAME","What is the 'Instance connection name' of your sql instance?")
+  ("a", "What is your project name?"),
+  ("a", "What is your project id?"),
+  ("a","What is the user's username on your production sql isntance?"),
+  ("a","What is the user's password on your production sql isntance?"),
+  ("","What is the sql instance's IP address?"),
+  ("a","What is the 'Instance id' of your sql instance?"),
+  ("a","What is the 'Instance connection name' of your sql instance?")
 ]
 
 answers = []
 
 # rename folders and variables
 for q in questions:
-	keyName = q[0]
-	question = q[1]
+  keyName = q[0]
+  question = q[1]
 
-	keyValue = raw_input("     " + question + " ")
+  keyValue = raw_input("     " + question + " ")
 
-	answers.append((keyName, keyValue))
+  answers.append((keyName, keyValue))
 
 answer = ""
 
 while not (answer.lower() == "yes" or answer.lower() == "y" or answer.lower() == "n" or answer.lower() == "no"):
-	answer = raw_input("     Are all the above fields correct? (Y/n) ")
+  answer = raw_input("     Are all the above fields correct? (Y/n) ")
 
 if (answer.lower() == "n" or answer.lower() == "no"):
-	print """
+  print """
      Alrighty then, aborting.
-	"""
-	sys.exit(0)
+  """
+  sys.exit(0)
 
 for a in answers:
-	findReplace(PROJECT_DIRECTORY, a[0], a[1], "*.py")
-	findReplace(PROJECT_DIRECTORY, a[0], a[1], "*.yaml")
+  findReplace(PROJECT_DIRECTORY, a[0], a[1], "*.py")
+  findReplace(PROJECT_DIRECTORY, a[0], a[1], "*.yaml")
 
 
 # delete readme
