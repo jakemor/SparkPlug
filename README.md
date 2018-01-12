@@ -1,4 +1,11 @@
-# Spark Plug
+```
+  __,                    _ __  _       
+ (                    / ( /  )//       
+  `.   ,_   __,  _   /<  /--'// , , _, 
+(___)_/|_)_(_/(_/ (_/ |_/   (/_(_/_(_)_
+      /|                            /| 
+     (/                            (/  
+```
 
 A framework for writing RESTful APIs with WebApp2 on Google App Engine in Python with out of the box support for user management, and an included helper script to get everything set up. 
 
