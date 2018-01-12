@@ -73,18 +73,18 @@ for q in questions:
 	keyName = q[0]
 	question = q[1]
 
-	keyValue = raw_input(question + " ")
+	keyValue = raw_input("    " + question + " ")
 
 	answers.append((keyName, keyValue))
 
 answer = ""
 
 while not (answer.lower() == "yes" or answer.lower() == "y" or answer.lower() == "n" or answer.lower() == "no"):
-	answer = raw_input("Are all the above fields correct? (Y/n) ")
+	answer = raw_input("    Are all the above fields correct? (Y/n) ")
 
 if (answer.lower() == "n" or answer.lower() == "no"):
 	print """
-	Alrighty then, aborting.
+    Alrighty then, aborting.
 	"""
 	sys.exit(0)
 
