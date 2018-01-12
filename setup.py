@@ -1,4 +1,4 @@
-import os, fnmatch
+import shutil, os, fnmatch
 
 print """
 
@@ -43,20 +43,26 @@ questions = [
 	("SQL_INSTANCE_CONNECTION_NAME","What is the 'Instance connection name' of your sql instance?")
 ]
 
-# for q in questions:
-# 	keyName = q[0]
-# 	question = q[1]
+# rename folders and variables
+for q in questions:
+	keyName = q[0]
+	question = q[1]
 
-# 	keyValue = raw_input(question + " ")
+	keyValue = raw_input(question + " ")
 
-# 	findReplace(PROJECT_DIRECTORY, keyName, keyValue, "*.py", True)
-# 	findReplace(PROJECT_DIRECTORY, keyName, keyValue, "*.yaml", True)
+	findReplace(PROJECT_DIRECTORY, keyName, keyValue, "*.py", True)
+	findReplace(PROJECT_DIRECTORY, keyName, keyValue, "*.yaml", True)
+
+# rename parent folder
 
 # delete readme
-os.remove('test.md')
-# delete .git
-# delete setup.py
+os.remove('README.md')
 
+# delete .git
+shutil.rmtree('.git')
+
+# delete setup.py
+os.remove('setup.py')
 
 
 
