@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 import shutil, os, fnmatch, sys
 
 print """
@@ -108,19 +106,13 @@ for a in answers:
 # os.remove('setup.py')
 
 print """
-
      Setup Complete.                      
 
-
-     Remaining steps: 
+     Next, rename your .gitignore file, initialize a
+     new git repository and add the child folder to
+     GoogleAppEngineLauncher.
  
-  1  Rename .gitignore file 
- 
-  2  Initialize a new git repository
- 
-  3  Add the child folder to App Engine Launcher
- 
-     ⚡
+     =)
 
 """
 
