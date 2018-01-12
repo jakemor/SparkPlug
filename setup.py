@@ -15,26 +15,28 @@ print """
      If you fuck up while answering the questions,
      delete this folder and git clone again.
  
-     ----------------------------- 
-     B E F O R E   S T A R T I N G  
-     ----------------------------- 
+
+     Before starting: 
+
  
   1  Create a new project in Google Cloud Platform], 
      then set up App Engine within that project. Take 
-     note of the `Project id`. 
+     note of 'name' you chose as well as the 'project id'. 
  
   2  Create a Cloud SQL Instance within the project as
-     well. Take note of the `Instance id` and the 
-     `Root password` that you choose during setup. When
-     setup is completed, take note of the `Instance
-     connection name` of your new instance. 
+     well. Take note of the 'instance id' and the 
+     'root password' that you choose during setup. When
+     setup is completed, take note of the 'instance
+     connection name' of your new instance. 
  
   3  When you see that setup is complete, click on the
      instance id, and go to Databases. Create a new
-     database and name it the name of your project.
+     database and name it the same as your project. in
+     step one.
  
-  4  Next go to Authorization and add your home network
-     so you can connect to the database from home. 
+  4  Lastly, authorize your current network in the 
+     Authorization section so you can connect to the 
+     instance locally. 
 
 """
 
