@@ -2,39 +2,39 @@ import shutil, os, fnmatch, sys
 
 print """
 
-      __,                    _ __  _       
-     (                    / ( /  )//       
-      `.   ,_   __,  _   /<  /--'// , , _, 
-    (___)_/|_)_(_/(_/ (_/ |_/   (/_(_/_(_)_
-          /|                            /| 
-         (/                            (/  
-
-
-    https://github.com/jakemor/SparkPlug
-
-    If you fuck up while answering the questions,
-    delete this folder and git clone again.
-
-    ----------------------------- 
-    B E F O R E   S T A R T I N G  
-    ----------------------------- 
-
-1.  Create a new project in Google Cloud Platform], 
-    then set up App Engine within that project. Take 
-    note of the `Project id`. 
-
-2.  Create a Cloud SQL Instance within the project as
-    well. Take note of the `Instance id` and the 
-    `Root password` that you choose during setup. When
-    setup is completed, take note of the `Instance
-    connection name` of your new instance. 
-
-3.  When you see that setup is complete, click on the
-    instance id, and go to Databases. Create a new
-    database and name it the name of your project.
-
-4.  Next go to Authorization and add your home network
-    so you can connect to the database from home. 
+       __,                    _ __  _       
+      (                    / ( /  )//       
+       `.   ,_   __,  _   /<  /--'// , , _, 
+     (___)_/|_)_(_/(_/ (_/ |_/   (/_(_/_(_)_
+           /|                            /| 
+          (/                            (/  
+ 
+ 
+     https://github.com/jakemor/SparkPlug
+ 
+     If you fuck up while answering the questions,
+     delete this folder and git clone again.
+ 
+     ----------------------------- 
+     B E F O R E   S T A R T I N G  
+     ----------------------------- 
+ 
+  1  Create a new project in Google Cloud Platform], 
+     then set up App Engine within that project. Take 
+     note of the `Project id`. 
+ 
+  2  Create a Cloud SQL Instance within the project as
+     well. Take note of the `Instance id` and the 
+     `Root password` that you choose during setup. When
+     setup is completed, take note of the `Instance
+     connection name` of your new instance. 
+ 
+  3  When you see that setup is complete, click on the
+     instance id, and go to Databases. Create a new
+     database and name it the name of your project.
+ 
+  4  Next go to Authorization and add your home network
+     so you can connect to the database from home. 
 
 """
 
@@ -73,18 +73,18 @@ for q in questions:
 	keyName = q[0]
 	question = q[1]
 
-	keyValue = raw_input("    " + question + " ")
+	keyValue = raw_input("     " + question + " ")
 
 	answers.append((keyName, keyValue))
 
 answer = ""
 
 while not (answer.lower() == "yes" or answer.lower() == "y" or answer.lower() == "n" or answer.lower() == "no"):
-	answer = raw_input("    Are all the above fields correct? (Y/n) ")
+	answer = raw_input("     Are all the above fields correct? (Y/n) ")
 
 if (answer.lower() == "n" or answer.lower() == "no"):
 	print """
-    Alrighty then, aborting.
+     Alrighty then, aborting.
 	"""
 	sys.exit(0)
 
@@ -103,10 +103,10 @@ for a in answers:
 # os.remove('setup.py')
 
 print """
-Complete. 
+     Setup Complete. 
 
-Now, rename the .gitignore file and initialize a new
-git repo inside your project =)
+     Now, rename the .gitignore file and initialize a new
+     git repo inside your project =)
 
 """
 
