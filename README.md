@@ -67,7 +67,7 @@ ProjectName
 
 3. Using the Google App Engine Launcher, go to `File > Add Existing Application` and add the path of the folder named your `project id`. This is not the parent folder, it's the child one. 
 
-4. All set, ensure everything is running and you're good to go =) 
+4. All set, ensure everything is running, initialize a `git` repo in the child folder and you're good to go =) 
 
 # Fin
 
