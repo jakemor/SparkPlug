@@ -105,22 +105,12 @@ for a in answers:
 # os.remove('setup.py')
 
 print """
-            ,/
-          ,'/
-        ,' /
-      ,'  /_____,
-     .'____    ,'    
-         /  ,'
-        / ,'
-       /,'
-      /'
-
      Setup Complete.                      
 
      Rename the .gitignore file, initialize a new
      git repo and you're good to go!
 
-     =)
+     ⚡
 
 """
 
