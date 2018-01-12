@@ -2,22 +2,22 @@ import shutil, os, fnmatch, sys
 
 print """
 
-	  __,                    _ __  _       
-	 (                    / ( /  )//       
-	  `.   ,_   __,  _   /<  /--'// , , _, 
-	(___)_/|_)_(_/(_/ (_/ |_/   (/_(_/_(_)_
-	      /|                            /| 
-	     (/                            (/  
+      __,                    _ __  _       
+     (                    / ( /  )//       
+      `.   ,_   __,  _   /<  /--'// , , _, 
+    (___)_/|_)_(_/(_/ (_/ |_/   (/_(_/_(_)_
+          /|                            /| 
+         (/                            (/  
 
 
-	https://github.com/jakemor/SparkPlug
+    https://github.com/jakemor/SparkPlug
 
-	If you fuck up while answering the questions,
-	delete this folder and git clone again.
+    If you fuck up while answering the questions,
+    delete this folder and git clone again.
 
-	----------------------------- 
-	B E F O R E   S T A R T I N G  
-	----------------------------- 
+    ----------------------------- 
+    B E F O R E   S T A R T I N G  
+    ----------------------------- 
 
 1.  Create a new project in Google Cloud Platform], 
     then set up App Engine within that project. Take 
