@@ -27,6 +27,8 @@ A framework for writing RESTful APIs with WebApp2 on Google App Engine in Python
 
 # Getting Started
 
+Assuming you've built many apps on app engine and google cloud platform, this should be pretty self explanitory! If you need help, shoot me an email. 
+
 ## Setting up Google Cloud Platform
 
 1. Create a new project in [Google Cloud Platform](http://fill.in), then set up App Engine within that project. Take note of the `Project id`. 
