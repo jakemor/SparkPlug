@@ -5,7 +5,7 @@ from datetime import date
 from time import mktime
 from time import strftime
 
-dev = os.environ['SERVER_SOFTWARE'].startswith('Development') or True
+dev = os.environ['SERVER_SOFTWARE'].startswith('Development')
 
 if dev:	
 	# local
