@@ -53,9 +53,6 @@ for q in questions:
 	findReplace(PROJECT_DIRECTORY, keyName, keyValue, "*.py")
 	findReplace(PROJECT_DIRECTORY, keyName, keyValue, "*.yaml")
 
-findReplace(PROJECT_DIRECTORY, 'SPARKPLUG_GITIGNORE', '.gitignore', '*')
-
-# rename parent folder
 
 # delete readme
 os.remove('README.md')
