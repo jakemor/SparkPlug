@@ -105,30 +105,17 @@ for a in answers:
 # os.remove('setup.py')
 
 print """
+            ,/
+          ,'/
+        ,' /
+      ,'  /_____,
+     .'____    ,'    
+         /  ,'
+        / ,'
+       /,'
+      /'
 
-           *      .            dZZZZZ,       .          *
-                              dZZZZ  ZZ,
-  *         .         ,AZZZZZZZZZZZ  `ZZ,_          *
-                 ,ZZZZZZV'      ZZZZ   `Z,`\
-               ,ZZZ    ZZ   .    ZZZZ   `V
-     *      ZZZZV'     ZZ         ZZZZ    \_              .
-.              V   l   .   ZZ        ZZZZZZ          .
-            l    \       ZZ,     ZZZ  ZZZZZZ,
-.          /            ZZ l    ZZZ    ZZZ `Z,
-                       ZZ  l   ZZZ     Z Z, `Z,            *
-             .        ZZ      ZZZ      Z  Z, `l
-                      Z        ZZ      V  `Z   \
-                      V        ZZC     l   V
-        Z             l        V ZR        l      .
-         \             \       l  ZA
-                         \         C          C
-                               \   K   /    /             K
-                       A    \   \  |  /  /              /
-                        \        \\\\|/ /  /
-                                  \|/ 
-
-                            Setup Complete. 
-                            
+     Setup Complete.                      
 
      Rename the .gitignore file, initialize a new
      git repo and you're good to go!
@@ -136,5 +123,7 @@ print """
      =)
 
 """
+
+
 
 
