@@ -7,7 +7,7 @@ A framework for writing RESTful APIs with WebApp2 on Google App Engine in Python
 [Peewee](http://fill.in). Documentation [here](http://fill.in).
 
 ## Project Structure
-
+```
 /ProjectName
 	/project-id 
 	/lib
@@ -23,6 +23,7 @@ A framework for writing RESTful APIs with WebApp2 on Google App Engine in Python
 	favicon.ico
 	index.yaml
 	main.py
+```
 
 # Getting Started
 
@@ -46,20 +47,21 @@ A framework for writing RESTful APIs with WebApp2 on Google App Engine in Python
 1. Git clone this repository wherever you want your project to live on your machine. Take note of the newly created SparkPlug folder and `cd` into it. 
 
 Structure:
-
+```
 SparkPlug
 	/.git
 	/PROJECT_ID
 	/setup.py
 	/README.md
-
+```
 
 2. Run `python setup.py` and answer all the questions. Don't fuck up, because there's no way to edit yet [you'll need to start over]. You'll notice that the project folder changed from SparkPlug to the name of your project. You'll also notice that the git repository has been deleted.
 
 New Structure:
-
+```
 ProjectName
 	/project-id
+```
 
 3. Using the Google App Engine Launcher, go to `File > Add Existing Application` and add the path of the folder named your `project id`. This is not the parent folder, it's the child one. 
 
