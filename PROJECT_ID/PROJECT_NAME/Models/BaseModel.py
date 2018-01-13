@@ -19,6 +19,11 @@ else:
 
 	
 class BaseModel(Model):
+
+	id = UUIDField(primary_key=True)
+	time_created = DateTimeField(default=datetime.datetime.now)
+	time_last_modified = DateTimeField(default=datetime.datetime.now)
+	
 	class Meta:
 		database = db
 

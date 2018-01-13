@@ -4,9 +4,6 @@ from BaseModel import *
 from PROJECT_NAME.Errors import *
 
 class User(BaseModel):
-	id = UUIDField(primary_key=True)
-	time_created = DateTimeField(default=datetime.datetime.now)
-	time_last_modified = DateTimeField(default=datetime.datetime.now)
 	
 	name = CharField(max_length=50, default="")
 	email = CharField(max_length=50, unique=True)
