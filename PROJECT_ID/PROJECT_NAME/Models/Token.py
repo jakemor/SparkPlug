@@ -8,6 +8,8 @@ class Token(BaseModel):
 
 	def serializable(self):
 		return {
-			"Type": "Token",
-			"Authorization": self.id.hex
+			"type": "Token",
+			"value": self.id.hex
+			"time_created": self.to_timestamp(self.time_created),
+			"time_last_modified": self.to_timestamp(self.time_last_modified),
 		} 

@@ -82,7 +82,7 @@ class BaseModel(Model):
 				# order by	
 
 				if var == "order_by":
-					order_by = getattr(Table, var)
+					order_by = getattr(Table, values[var])
 					continue
 
 				# desc
